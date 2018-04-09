@@ -3,7 +3,7 @@
 Going over some fundemantals, learning some modern JS
 
 | Primitive  | Data Types |||||
-| ---------- |---|---|---|---|---|
+| ---------- |:---|---|---|---|---|
 | String     | Number | Boolean | null | Undefined | Symbols |
 
 | Reference | Data Types ||||
