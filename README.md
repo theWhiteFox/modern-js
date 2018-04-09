@@ -1,6 +1,6 @@
 # modern-js
 
-Going over some fundemantals, learning some modern JS
+Going over some fundemantals and learning some modern JS
 
 | Primitive  | Data Types |||||
 | ---------- |:---|---|---|---|---|
