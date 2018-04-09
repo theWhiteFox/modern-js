@@ -2,11 +2,11 @@
 
 Going over some fundemantals, learning some modern JS
 
-| Primitive  Data Types |||||
+| Primitive  | Data Types |||||
 | ---------- |---|---|---|---|---|
 | String     | Number | Boolean | null | Undefined | Symbols |
 
-| Reference Data Types |||||
+| Reference | Data Types ||||
 | --------- | ---------- |---|---|---|
 | Arrays    | Object Literals | Dates | Functions | Anything Else |
 
