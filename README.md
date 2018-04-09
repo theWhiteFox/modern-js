@@ -7,7 +7,7 @@ Going over some fundemantals, learning some modern JS
 | String     | Number | Boolean | null | Undefined | Symbols |
 
 | Reference | Data Types ||||
-| --------- | ---------- |---|---|---|
+| --------- | :--------- |---|---|---|
 | Arrays    | Object Literals | Dates | Functions | Anything Else |
 
 Dynamically Typed Language
