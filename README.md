@@ -1,14 +1,21 @@
 # modern-js
 
-Going over some fundemantals and learning some modern JS
+Going over some fundemantals and learn me some more modern JS ES6
 
-| Primitive  | Data Types |||||
-| ---------- |:---|---|---|---|---|
-| String     | Number | Boolean | null | Undefined | Symbols |
+| Primitive Data Types | Reference Data Types |
+| :------------------- | -------------------: |
+| Stored directly in the location the variable accesses | Accessed by reference |
+| Stored on the stack | Objects that are stored on the heap |
+|                   | A pointer to a location in memory |
 
-| Reference | Data Types ||||
-| --------- | :--------- |---|---|---|
-| Arrays    | Object Literals | Dates | Functions | Anything Else |
+| Primitive Data Types | Reference Data Types |
+| :------------------- | -------------------: |
+| String     | Arrays    |
+| Number |   Object Literals |
+|Boolean | Dates |
+| null | Functions |
+| Undefined | Anything Else |
+| Symbols |
 
 Dynamically Typed Language
 
