@@ -40,3 +40,7 @@ VSCode Extensions
 - JavaScript(ES6) code snippets
 - jshint
 - Live Server
+
+## links
+
+[medium freecodecamp type coercion explained](https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839)
