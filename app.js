@@ -1,45 +1,84 @@
-// practicing math
-
+// practicing string
+const firstName = 'Stephen';
+const lastName = `O'Connor`;
+const age = 33;
+const job = 'Web Dev';
+const city = 'Delhi';
+const str = 'Hello there my name is ';
+const tags = 'web design,web-development,programming';
 let val;
+let html;
 
-// number to string
-val = 5;
+// concat
+val = firstName + ' ' + lastName;
 
-/// boolean to string
-val = String(true);
+// append
+val = 'Brad';
+val += ' Pitt';
 
-val = 'String';
+val = 'Hello, my name is ' + firstName + ' ' + lastName + ' and I am ' + age;
 
-// date to string
-val = String(new Date());
+// escape
+val = 'Thats\'s awesome ' + firstName + ', I can\'t wait.';
 
-// array to string
-val = String([1,2,3,4]);
+// length
+val = firstName.length;
 
-// toString()
-val = (5).toString();
-val = (true).toString();
+// concat method
+val = firstName.concat(' ' + lastName);
 
-// string to number
-val = Number('5');
-val = Number('hello');
-val = Number([1,2,3,4]);
+// change case 
+val = firstName.toUpperCase();
+val = lastName.toLowerCase();
 
-val = parseInt('100.30');
-val = parseFloat('100.30');
+val = firstName[2];
 
- // output
+// indexOf()
+val = firstName.indexOf('t');
+val = firstName.lastIndexOf('p');
+
+// charAt()
+val = firstName.charAt('3');
+// get last char
+val = firstName.charAt(firstName.length - 1);
+
+// substring()
+val = firstName.substring(0, 4);
+
+// slice()
+val = firstName.slice(0, 4);
+val = firstName.slice(-3);
+
+// split()
+val = str.split(' ');
+val = tags.split(',');
+
+// replace()
+val = tags.replace('web design', 'JS').split(',');
+
+// includes
+val = str.includes('foo'); // false
+
 console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(2));
-console.log(val.length);
 
-// type coercion
-const val1 = String(5);
-const val2 = 6;
-const sum = val1 + val2;
+// without template strings (ES5)
+html = '<ul><li>Name: ' + firstName + '</li><li>Age:' + age + ' </li><li>Job: ' + job + '</li><li>City:' +  city;
 
-console.log(sum);
-console.log(typeof sum);
+function hello() {
+    return 'hello';
+}
 
+// template strings (ES6)
+html = `
+    <ul>
+        <li>Name: ${firstName + ' ' + lastName}</li>      
+        <li>Age: ${age}</li>
+        <li>Job: ${job}</li>
+        <li>City: ${city}</li>
+        <li>${2 + 2}</li>
+        <li>${hello()}</li>
+        <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+    </ul>
+`;
 
+document.getElementById("details").innerHTML = html;
