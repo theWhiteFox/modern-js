@@ -1,4 +1,4 @@
-// practicing conversion
+// practicing math
 
 let val;
 
