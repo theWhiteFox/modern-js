@@ -1,84 +1,66 @@
-// practicing string
-const firstName = 'Stephen';
-const lastName = `O'Connor`;
-const age = 33;
-const job = 'Web Dev';
-const city = 'Delhi';
-const str = 'Hello there my name is ';
-const tags = 'web design,web-development,programming';
+const numbers = [43,67,2,44,36,5];
+const numbers2 = new Array(22,45,26,4,6,85);
+const fruit = ['Apple','Orange','Pear','Banana'];
+const mixed = [22,'Hello',true,undefined,null,{a:5, b:1}, new Date()];
+
 let val;
-let html;
 
-// concat
-val = firstName + ' ' + lastName;
+// get the array length
+val = numbers.length;
+// check if is array
+val = Array.isArray(numbers);
+// get a single val
+val = numbers[3];
+val = numbers[0];
+// insert into array
+numbers[2] = 100;
+// find index of val
+val = numbers.indexOf(36);
 
-// append
-val = 'Brad';
-val += ' Pitt';
+/* mutating arrays, 
+add to end */
+numbers.push(250);
+// add to front
+numbers.unshift(120);
+// take from end
+numbers.pop();
+// take from front
+numbers.shift();
+// splice values
+numbers.splice(1, 3);
+// reverse array
+numbers.reverse();
 
-val = 'Hello, my name is ' + firstName + ' ' + lastName + ' and I am ' + age;
+// concat array
+val = numbers.concat(numbers2);
 
-// escape
-val = 'Thats\'s awesome ' + firstName + ', I can\'t wait.';
+// sorting array
+val = fruit.sort();
+// val = numbers.sort();
 
-// length
-val = firstName.length;
+// compare func
+// val = numbers.sort(function(x,y) {
+//     return x - y;
+// });
 
-// concat method
-val = firstName.concat(' ' + lastName);
+// // compare func reverse sort
+// val = numbers.sort(function(x,y) {
+//     return y - x;
+// });
 
-// change case 
-val = firstName.toUpperCase();
-val = lastName.toLowerCase();
-
-val = firstName[2];
-
-// indexOf()
-val = firstName.indexOf('t');
-val = firstName.lastIndexOf('p');
-
-// charAt()
-val = firstName.charAt('3');
-// get last char
-val = firstName.charAt(firstName.length - 1);
-
-// substring()
-val = firstName.substring(0, 4);
-
-// slice()
-val = firstName.slice(0, 4);
-val = firstName.slice(-3);
-
-// split()
-val = str.split(' ');
-val = tags.split(',');
-
-// replace()
-val = tags.replace('web design', 'JS').split(',');
-
-// includes
-val = str.includes('foo'); // false
-
-console.log(val);
-
-// without template strings (ES5)
-html = '<ul><li>Name: ' + firstName + '</li><li>Age:' + age + ' </li><li>Job: ' + job + '</li><li>City:' +  city;
-
-function hello() {
-    return 'hello';
+// find in array
+function under25(num) {
+    return num < 25;
 }
 
-// template strings (ES6)
-html = `
-    <ul>
-        <li>Name: ${firstName + ' ' + lastName}</li>      
-        <li>Age: ${age}</li>
-        <li>Job: ${job}</li>
-        <li>City: ${city}</li>
-        <li>${2 + 2}</li>
-        <li>${hello()}</li>
-        <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
-    </ul>
-`;
+val = numbers.find(under25);
 
-document.getElementById("details").innerHTML = html;
+// find in array
+function over25(num) {
+    return num > 25;
+}
+
+val = numbers.find(over25);
+
+console.log(numbers);
+console.log(val);
