@@ -44,3 +44,7 @@ VSCode Extensions
 ## links
 
 [medium freecodecamp type coercion explained](https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839)
+
+[digitalocean understanding date time](https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript)
+
+[mozilla Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)

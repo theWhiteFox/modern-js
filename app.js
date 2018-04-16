@@ -1,39 +1,25 @@
-const person = {
-    firstName: 'Alex',
-    lastName: 'Murphy',
-    age: 33,
-    email: 'alex@theRoboCop.it',
-    'prime directives': [
-        "Serve the public trust",
-        "Protect the innocent",
-        "Uphold the law",
-        "Never Oppose an OCP Officer"
-    ],
-    adress: {
-        city: 'Detroit',
-        state: 'Micigan'
-    },
-    'D.O.B': function() {
-        return 2018 - this.age;
-    }
-};
-
 let val;
 
-val = person;
+const today = new Date();
+let birthday = new Date(0);
+birthday = new Date("January 31 1980 12:30");
+birthday = new Date('9/10/1981 13:45');
 
-// get specific val
-val = person.firstName;
-val = person['lastName'];
-val = person.age;
-val = person["prime directives"];
-val = person.adress.state;
-val = person.adress['city'];
-val = person["D.O.B"]();
+val = birthday;
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getMilliseconds();
+val = today.getTime();
 
-console.log(val);
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1985);
+birthday.setMinutes(30);
+birthday.setSeconds(25);
 
-for(var key in person) {
-    console.log(key + ': ' + person[key]);
-}
-
+console.log(birthday);
