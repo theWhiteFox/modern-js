@@ -1,66 +1,39 @@
-const numbers = [43,67,2,44,36,5];
-const numbers2 = new Array(22,45,26,4,6,85);
-const fruit = ['Apple','Orange','Pear','Banana'];
-const mixed = [22,'Hello',true,undefined,null,{a:5, b:1}, new Date()];
+const person = {
+    firstName: 'Alex',
+    lastName: 'Murphy',
+    age: 33,
+    email: 'alex@theRoboCop.it',
+    'prime directives': [
+        "Serve the public trust",
+        "Protect the innocent",
+        "Uphold the law",
+        "Never Oppose an OCP Officer"
+    ],
+    adress: {
+        city: 'Detroit',
+        state: 'Micigan'
+    },
+    'D.O.B': function() {
+        return 2018 - this.age;
+    }
+};
 
 let val;
 
-// get the array length
-val = numbers.length;
-// check if is array
-val = Array.isArray(numbers);
-// get a single val
-val = numbers[3];
-val = numbers[0];
-// insert into array
-numbers[2] = 100;
-// find index of val
-val = numbers.indexOf(36);
+val = person;
 
-/* mutating arrays, 
-add to end */
-numbers.push(250);
-// add to front
-numbers.unshift(120);
-// take from end
-numbers.pop();
-// take from front
-numbers.shift();
-// splice values
-numbers.splice(1, 3);
-// reverse array
-numbers.reverse();
+// get specific val
+val = person.firstName;
+val = person['lastName'];
+val = person.age;
+val = person["prime directives"];
+val = person.adress.state;
+val = person.adress['city'];
+val = person["D.O.B"]();
 
-// concat array
-val = numbers.concat(numbers2);
-
-// sorting array
-val = fruit.sort();
-// val = numbers.sort();
-
-// compare func
-// val = numbers.sort(function(x,y) {
-//     return x - y;
-// });
-
-// // compare func reverse sort
-// val = numbers.sort(function(x,y) {
-//     return y - x;
-// });
-
-// find in array
-function under25(num) {
-    return num < 25;
-}
-
-val = numbers.find(under25);
-
-// find in array
-function over25(num) {
-    return num > 25;
-}
-
-val = numbers.find(over25);
-
-console.log(numbers);
 console.log(val);
+
+for(var key in person) {
+    console.log(key + ': ' + person[key]);
+}
+
