@@ -40,6 +40,7 @@ VSCode Extensions
 - JavaScript(ES6) code snippets
 - jshint
 - Live Server
+- Quokka.js
 
 ## links
 
@@ -48,3 +49,5 @@ VSCode Extensions
 [digitalocean understanding date time](https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript)
 
 [mozilla Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+[mozilla for...of](https://hacks.mozilla.org/2015/04/es6-in-depth-iterators-and-the-for-of-loop/)
