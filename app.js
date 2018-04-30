@@ -1,71 +1,55 @@
-// // for loop
+// window methods objects properties
 
-// for(let i  =0; i < 10; i++) {
-//   // console.log(i);
-//   if(i === 2) {
-//     console.log('2 is my fav number');
-//     continue;
-//   }
-//   if(i === 5) {
-//     console.log('Stop the loop');
-//     break;
-//   }
-//   // console.log('Number ' + i);
+// alert
+// alert('Hello World');
+
+// prompt
+// const input = prompt();
+// alert(input);
+
+// if(confirm('Are you sure?')) {
+//   console.log('Yes');
+// } else {
+//   console.log('No');
 // }
 
-// // while loop
-// let i = 0;
-// while(i < 10) {
-//   // console.log('Number ' + i);
-//   i++;
-// }
+let val;
 
-// // do while
-// let x = 100;
-// do {
-//   // console.log('Number ' + x);
-//   x++;
-// }
+// outer height and width
+val = window.outerHeight;
+val = window.outerWidth;
 
-// while(x < 10);
+// inner height and width
+val = window.innerHeight;
+val = window.innerWidth;
 
+// scroll points
+val = window.scrollY;
+val = window.scrollX;
 
-const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+// location object
+val = window.location;
+val = window.location.hostname;
+val = window.location.prot;
+val = window.location.href;
+val = window.location.search;
 
-// for(let i = 0; cars.length; i++) {
-//   console.log(cars[i]);
-// }
+// redirect
+// window.location.href = 'http://google.com';
 
-// foreach
-cars.forEach(function(car, index, array) {
-  console.log(car, index, array);
-});
+// reload
+// window.location.reload();
 
-// map
-const users = [
-    {id:1, name:'John'},
-    {id:2, name:'Sara'},
-    {id:3, name:'Karan'},
-];
+window.history.go(-2);
+val = window.history.length;
 
-const ids = users.map(function(user) {
-  return user.id;
-});
+// navigator object
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
 
-console.log(ids);
-
-const user = {
-  firstName: 'Larry',
-  lastName: 'David',
-  age: 70
-};
-
-// for in
-for(const x in user) {
-  console.log(`${x} for in`);
-}
-
-// for of
-for (var chr of "😺😲") {
-    alert(chr);
-}
+console.log(val);
