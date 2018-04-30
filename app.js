@@ -61,8 +61,8 @@ const user = {
 };
 
 // for in
-for(const x of user) {
-  console.log(`${x}`);
+for(const x in user) {
+  console.log(`${x} for in`);
 }
 
 // for of
