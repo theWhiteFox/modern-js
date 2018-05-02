@@ -1,59 +1,51 @@
-(function() {
-  "use strict";
+let val;
 
-  // document get elements by class name
-  const items = document.getElementsByClassName("collection-item");
-  items[0].style.color = "red";
-  items[3].textContent = "HELLO!";
-  console.log(items);
-  console.log(items[0]);
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelector('li.collection-item:first-child');
 
-  const listItems = document
-    .querySelector("ul")
-    .getElementsByClassName("collection-item");
+val = listItem;
+val = list;
 
-  console.log(listItems);
+// get childNodes
+val = list.childNodes;
+val = list.childNodes[0];
+val = list.childNodes[0].nodeName;
+val = list.childNodes[1].nodeType;
 
-  // get elements by tag name just the text in li
-  let lis = document.getElementsByTagName("span");
-  lis[1].style.color = "blue";
-  lis[3].textContent = "GOODBYE!";
-  console.log(lis);
-  console.log(lis[0]);
+// Constant	                      Value	Description
+// Node.ELEMENT_NODE	              1	  An Element node such as <p> or <div>.
+// Node.TEXT_NODE	                  3	  The actual Text of Element or Attr.
+// Node.PROCESSING_INSTRUCTION_NODE	7	  A ProcessingInstruction of an XML document such as <?xml-stylesheet ... ?> declaration.
+// Node.COMMENT_NODE	              8	  A Comment node.
+// Node.DOCUMENT_NODE	              9	  A Document node.
+// Node.DOCUMENT_TYPE_NODE	        10	A DocumentType node e.g. <!DOCTYPE html> for HTML5 documents.
+// Node.DOCUMENT_FRAGMENT_NODE	    11	A DocumentFragment node.
 
-  let lis1 = document.getElementsByTagName("li");
-  // convert lis to Array
-  lis1 = Array.from(lis1);
+// get children element nodes
+val = list.children;
+val = list.children[1];
+list.children[2].textContent = 'Hello';
 
-  lis1.reverse();
-  
-  lis1.forEach((li, index) => {
-    console.log(li.className);
-    li.textContent = `${index}: Hello`;
-  });
+// children of children
+list.children[3].children[1].id = 'test-link';
+val = list.children[3].children[1];
 
-  lis1[1].style.color = "pink";
-  lis1[3].textContent = "Aha!";
-  console.log(lis);
-  console.log(lis[1]);
+val = list.firstChild;
+val = list.firstElementChild;
 
-  // query selector all
-  const items2 = document.querySelectorAll("ul.collection li.collection-item");
+val = list.lastChild;
+val = list.lastElementChild;
 
-  items2.forEach((item, index) => {
-    item.textContent = `${index}: Hello!`;
-  });
+val = list.childElementCount;
 
-  const liOdd = document.querySelectorAll('li:nth-child(odd)');
-  const liEven = document.querySelectorAll('li:nth-child(even)');
+val = listItem.parentNode;
+val = listItem.parentElement;
+val = listItem.parentElement.parentElement;
 
-  liOdd.forEach(li => {
-      li.style.background = '#ccc';
-  });
+val = listItem.nextSibling;
+val = listItem.nextElementSibling;
 
-  for(let i = 0; i < liEven.length; i++) {
-      liEven[i].style.background = '#f4f4f4';
-  }
+val = listItem.previousSibling;
+val = listItem.previousElementSibling;
 
-  console.log(items2);
-})();
+console.log(val);

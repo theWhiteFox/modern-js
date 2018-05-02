@@ -54,3 +54,9 @@ VSCode Extensions
 [mozilla for...of](https://hacks.mozilla.org/2015/04/es6-in-depth-iterators-and-the-for-of-loop/)
 
 [StackOverflow not recommended to use strict ES6](https://stackoverflow.com/questions/31685262/not-recommended-to-use-use-strict-in-es6)
+
+[searching elements dom](https://javascript.info/searching-elements-dom)
+
+[hackernoon htmlcollection nodelist & array of objects](https://hackernoon.com/htmlcollection-nodelist-and-array-of-objects-da42737181f9)
+
+[MDN childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
