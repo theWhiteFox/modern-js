@@ -1,6 +1,6 @@
 # modern-js
 
-Going over some fundemantals and learn me some more modern JS ES6
+Going over some fundamentals and learn me some more modern JS ES6
 
 | Primitive Data Types | Reference Data Types |
 | :------------------- | -------------------: |
@@ -35,10 +35,11 @@ https://code.visualstudio.com/docs/editor/extension-gallery
 
 VSCode Extensions
 
+- Auto Close Tag
+- Auto Rename Tag
 - Bracket Pair Colorizer
-- ESLint
+- JSHint or ESLint
 - JavaScript(ES6) code snippets
-- jshint
 - Live Server
 - Quokka.js
 
@@ -51,3 +52,5 @@ VSCode Extensions
 [mozilla Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 [mozilla for...of](https://hacks.mozilla.org/2015/04/es6-in-depth-iterators-and-the-for-of-loop/)
+
+[StackOverflow not recommended to use strict ES6](https://stackoverflow.com/questions/31685262/not-recommended-to-use-use-strict-in-es6)
